@@ -73,12 +73,12 @@
           <button
             id="copybtn"
             v-on:click="vcopy()"
-            class="absolute w-7 h-7 right-2 top-2 bg-[url('../src/assets/copy.svg')] bg-no-repeat opacity-70 active:opacity-100 ease-in duration-200 delay-100"
+            class="absolute w-7 h-7 right-2 top-2 bg-[url('/assets/copy.svg')] bg-no-repeat opacity-70 active:opacity-100 ease-in duration-200 delay-100"
           ></button>
           <button
             id="refbtn"
             v-on:click="gen()"
-            class="absolute w-7 h-7 left-2 top-2 bg-[url('../src/assets/ref.svg')] bg-no-repeat opacity-70 active:opacity-100"
+            class="absolute w-7 h-7 left-2 top-2 bg-[url('/assets/ref.svg')] bg-no-repeat opacity-70 active:opacity-100"
           ></button>
         </div>
       </div>
