@@ -297,7 +297,7 @@ function generate() {
     shw[Math.floor(Math.random() * shw.length)] +
     shw[Math.floor(Math.random() * shw.length)];
   console.log(password);
-  $("#copybtn").removeClass("bg-[url('../src/assets/copied.svg')]");
+  $("#copybtn").removeClass("copedbg");
 }
 generate();
 </script>
