@@ -73,12 +73,12 @@
           <button
             id="copybtn"
             v-on:click="vcopy()"
-            class="absolute w-7 h-7 right-2 top-2 bg-[url('/assets/copy.svg')] bg-no-repeat opacity-70 active:opacity-100 ease-in duration-200 delay-100"
+            class="absolute w-7 h-7 right-2 top-2 bg-no-repeat opacity-70 active:opacity-100 ease-in duration-200 delay-100 copbg"
           ></button>
           <button
             id="refbtn"
             v-on:click="gen()"
-            class="absolute w-7 h-7 left-2 top-2 bg-[url('/assets/ref.svg')] bg-no-repeat opacity-70 active:opacity-100"
+            class="absolute w-7 h-7 left-2 top-2 bg-no-repeat opacity-70 active:opacity-100 refbg"
           ></button>
         </div>
       </div>
@@ -155,7 +155,7 @@ export default {
 function copy() {
   document.querySelector("#sifre").select();
   document.execCommand("copy");
-  $("#copybtn").addClass("bg-[url('../src/assets/copied.svg')]");
+  $("#copybtn").addClass("copedbg");
 }
 const lwrCase = [
   "q",
