@@ -254,8 +254,9 @@
   </div>
 </template>
 <script setup>
+  import { ref } from "vue"
 import $ from "jquery";
-let password
+let password = ref('none')
 function VN() {
   if (BN == true) {
     BN = false;
@@ -265,7 +266,6 @@ function VN() {
     $("#nmbr").addClass(" bg-csblue");
   }
   selects();
-  password = password
   
 }
 function VU() {
@@ -425,7 +425,7 @@ function selects() {
 }
 
 function generate() {
-  password =
+  password.value =
     shw[Math.floor(Math.random() * shw.length)] +
     shw[Math.floor(Math.random() * shw.length)] +
     shw[Math.floor(Math.random() * shw.length)] +
@@ -439,8 +439,6 @@ function generate() {
     shw[Math.floor(Math.random() * shw.length)] +
     shw[Math.floor(Math.random() * shw.length)];
   $("#copybtn").removeClass("copedbg");
-  $('#ekran').html(password)
-  $('#sifre').html(password)
 }
 generate();
 </script>
