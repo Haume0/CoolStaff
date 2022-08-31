@@ -2,7 +2,7 @@
   <div class="bg-csmain w-screen h-screen">
     <input
       type="text"
-      v-model="ekran"
+      v-model="password"
       readonly
       id="sifre"
       class="absolute opacity-0 -top-full -left-full w-[1px] h-0"
