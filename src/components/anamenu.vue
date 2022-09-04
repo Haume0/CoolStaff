@@ -1,14 +1,14 @@
 <template>
-    <div class="bg-csmain w-screen h-screen">
+    <div class="bg-csmain w-screen h-[calc(100vw+10rem)]">
         <div class="flex justify-center place-items-center w-screen h-screen">
-            <div class="absolute w-[344px] h-[96px] flex items-center top-10">
+            <div class="absolute w-[344px] h-[96px] flex items-center top-14">
                 <img src="../assets/coolstaff.svg" class="absolute" />
-                <span class="absolute font-Nunito font-extrabold text-4xl ml-28" >CoolStaff</span>
+                <span class="absolute font-Nunito font-extrabold text-4xl ml-28 text-[#fff]" >CoolStaff</span>
                 <span class="absolute font-Nunito font-semibold text-base ml-28 mt-14">Cool and open sourced tools.</span>
             </div>
-            <div class="absolute bg-[#fff] h-[1px] w-[66%] top-44"></div>
-            <ul class="absolute flex w-[66%] h-[66%] justify-start mt-48">
-                <div id="foo" @click="goPG()" class="relative bg-csside rounded-2xl w-56 h-56 border-solid border-[#444444] border-[2px] cshover">
+            <div class="absolute bg-[#fff] h-[1px] w-[55%] top-44"></div>
+            <ul class="absolute flex w-[52%] h-[64%]  justify-center bottom-0">
+                <div id="foo" @click="goPG()" class="relative bg-csside rounded-2xl w-56 h-56 border-solid border-[#444444] border-[2px] cshover ease-in-out delay-75 duration-150">
                     <img src="../assets/coolpg.svg" class="absolute w-28 h-28 top-[calc(50%-90px)] left-[calc(50%-96px/2)]" />
                     <div class="absolute w-24 h-8 bg-[#000]/70 csblur rounded-l-full right-0 top-4 flex justify-center place-items-center">
                         <span class="font-Nunito font-bold text-based text-[#62EF89]">Released</span>
@@ -18,16 +18,27 @@
                             <span class="absolute w-[100%] text-center font-Nunito font-normal text-[12px] mt-8">A powerfull password generator.</span>
                     </div>
                 </div>
-                <div class="relative bg-csside rounded-2xl w-56 h-56 border-solid border-[#444444] border-[2px] ml-5 cshoverNO">
+                <div class="relative bg-csside rounded-2xl w-56 h-56 border-solid border-[#444444] border-[2px] ml-5 cshoverNO ease-in-out delay-75 duration-150">
                     <img src="../assets/coolgl.svg" class="absolute w-28 h-28 top-[calc(50%-90px)] left-[calc(50%-96px/2)]" />
                     <div class="absolute w-24 h-8 bg-[#000]/70 csblur rounded-l-full right-0 top-4 flex justify-center place-items-center">
                         <span class="font-Nunito font-bold text-sm text-[#EFB762]">Comin' Soon</span>
                     </div>
                     <div class="absolute flex justify-center w-full h-[30%] rounded-b-2xl bottom-0 bg-csmain">
                         <span class="absolute w-[90%] text-center font-Nunito font-semibold text-base mt-2">Gradient Library</span>
-                        <span class="absolute w-[100%] text-center font-Nunito font-normal text-[12px] mt-8">Cool gradients for cool designs and arts.</span>
+                        <span class="absolute w-[100%] text-center font-Nunito font-normal text-[11px] mt-8">Cool gradients for cool designs and arts.</span>
                     </div>
                 </div>
+                <div class="relative bg-csside rounded-2xl w-56 h-56 border-solid border-[#444444] border-[2px] ml-5 cshoverNO ease-in-out delay-75 duration-150">
+                    <img src="../assets/coolwait.svg" class="absolute w-28 h-28 top-[calc(50%-90px)] left-[calc(50%-96px/2)]" />
+                    <div class="absolute w-24 h-8 bg-[#000]/70 csblur rounded-l-full right-0 top-4 flex justify-center place-items-center">
+                        <span class="font-Nunito font-bold text-sm text-[#EFB762]">Comin' Soon</span>
+                    </div>
+                    <div class="absolute flex justify-center w-full h-[30%] rounded-b-2xl bottom-0 bg-csmain">
+                        <span class="absolute w-[94%] text-center font-Nunito font-semibold text-base mt-2">More cool stuffs coming!😎</span>
+                        <span class="absolute w-[100%] text-center font-Nunito font-normal text-[11px] mt-8">Wait while we making more cool staffs.</span>
+                    </div>
+                </div>
+
             </ul>
         </div>
     </div>
