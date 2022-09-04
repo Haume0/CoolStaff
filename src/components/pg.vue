@@ -88,6 +88,7 @@
                 rounded-full
                 cursor-pointer
                 hover:brightness-200
+                cshover-2
               "
             >
               <div
@@ -129,6 +130,7 @@
                 right-0
                 rounded-full
                 cursor-pointer
+                cshover-2
               "
             >
               <div
@@ -171,6 +173,7 @@
                 left-[138px]
                 rounded-full
                 cursor-pointer
+                cshover-2
               "
             >
               <div
