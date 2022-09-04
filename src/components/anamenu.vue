@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-csmain w-full h-[calc(100vw+10rem)]">
+    <div class="bg-csmain w-screen h-[calc(100vw+10rem)]">
         <div class="flex justify-center place-items-center w-full h-full">
             <div class="absolute w-[344px] h-[96px] flex items-center top-14">
                 <img src="../assets/coolstaff.svg" class="absolute" />
