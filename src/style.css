@@ -2,6 +2,8 @@
 @tailwind utilities;
 
 *{
+  margin: 0px;
+  padding: 0px;
   -webkit-user-drag: none;
 }
 .csblur{
