@@ -16,6 +16,10 @@
   border-width: 2px!important;
   cursor: pointer;
 }
+.cshover-2:hover{
+  background: #4d4d4d;
+  cursor: pointer;
+}
 .cshoverNO:hover{
   border-style: solid !important;
   border-color: #f04c4c!important;
