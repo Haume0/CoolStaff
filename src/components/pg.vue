@@ -1,6 +1,6 @@
 <template>
     <div class="bg-csmain w-screen h-screen">
-      <div id="foo" @click="$router.back()" class="absolute cshover w-14 h-14 bg-csside ml-10 mt-10 rounded-full flex justify-center place-items-center">
+      <div id="foo" @click="$router.back()" class="absolute border-solid border-[#444444] border-[2px] cshover w-14 h-14 bg-csside ml-10 mt-10 rounded-full flex justify-center place-items-center">
         <img src="../assets/back.svg" alt="" class="absolute mb-1" />
       </div>
       <input
