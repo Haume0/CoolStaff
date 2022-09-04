@@ -1,6 +1,6 @@
 <template>
-    <div class="bg-csmain w-screen h-[calc(100vw+10rem)]">
-        <div class="flex justify-center place-items-center w-screen h-screen">
+    <div class="bg-csmain w-full h-[calc(100vw+10rem)]">
+        <div class="flex justify-center place-items-center w-full h-full">
             <div class="absolute w-[344px] h-[96px] flex items-center top-14">
                 <img src="../assets/coolstaff.svg" class="absolute" />
                 <span class="absolute font-Nunito font-extrabold text-4xl ml-28 text-[#fff]" >CoolStaff</span>
