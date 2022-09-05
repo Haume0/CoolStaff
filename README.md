@@ -1,7 +1,8 @@
-# CoolStaff Project 🕶️
+# ✨CoolStaff Project
 
-This project is my adventure of learning about the vue.js that I started to offer useful tools to everyone.
+The aim of this project is to provide useful tools that will make everyone's job easier.   
+Icons, logos, brand names belong to me, all other codes, infrastructure, etc. are open source.
 
-## Projects official website 🔗
+### 🔗 Projects official website
 
 - https://coolstaff.netlify.app/
