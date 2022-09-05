@@ -1,10 +1,26 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --scale: 1;
+}
+
+body{
+  background: #212121;
+  transform:scale(var(--scale));
+  transition: ease-in;
+  transition-delay: 75ms;
+  transition-duration: 150ms;
+}
 *{
   margin: 0px;
   padding: 0px;
   -webkit-user-drag: none;
+}
+.dene{
+  margin:3rem;
+  grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr));
+  display:grid
 }
 .csblur{
   backdrop-filter: blur(5px);
