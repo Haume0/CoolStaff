@@ -23,7 +23,7 @@
       type="text"
       v-model="password"
       readonly
-      id="sifre"
+      id="password"
       class="absolute opacity-0 -top-full -left-full w-[1px] h-0"
     />
     <div class="flex justify-center place-items-center w-screen h-screen">
@@ -228,7 +228,7 @@
         <div class="copi">
           <button
             id="copybtn"
-            v-on:click="vcopy()"
+            @click="vcopy()"
             class="
               absolute
               w-7
@@ -246,7 +246,7 @@
           ></button>
           <button
             id="refbtn"
-            v-on:click="gen()"
+            @click="gen()"
             class="
               absolute
               w-7
@@ -319,7 +319,7 @@ function vcopy() {
   copy();
 }
 function copy() {
-  document.querySelector("#sifre").select();
+  document.querySelector("#password").select();
   document.execCommand("copy");
   $("#copybtn").addClass("copedbg");
 }
@@ -464,7 +464,6 @@ function generate() {
   $("#copybtn").removeClass("copedbg");
 }
 generate();
-
 </script>
   <style></style>
   

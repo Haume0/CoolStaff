@@ -5,7 +5,7 @@
                 <span class="absolute font-Nunito font-extrabold text-4xl ml-28 text-[#fff]" >CoolStaff</span>
                 <span class="absolute font-Nunito font-semibold text-base ml-28 mt-14">Cool and open sourced tools.</span>
             </div>
-            <div class="absolute bg-[#fff] h-[1px] w-3/4 min-w-[340px] top-44"></div>
+            <div class="absolute bg-[#fff] h-[1px] w-3/4 min-w-[340px] max-w-[800px] top-44"></div>
             <ul class="absolute flex flex-wrap gap-x-[20px] gap-y-[10px] justify-center w-3/4 top-48">
                 <div id="foo" @click="goPG()" class="relative basis-60 min-w-[200px] min-h-[200px] ml-0 bg-csside rounded-2xl h-56 border-solid border-[#444444] border-[2px] cshover ease-in-out delay-75 duration-150">
                     <img src="../assets/coolpg.svg" class="absolute w-28 h-28 top-[calc(50%-90px)] left-[calc(50%-96px/2)]" />

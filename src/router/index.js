@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import mainMenu from '../components/anamenu.vue'
-import pg from '../components/pg.vue'
+import mainMenu from '../components/mainmenu.vue'
+import pg from '../components/passwordgenerator.vue'
 
 const router = createRouter({
     history: createWebHistory(),
@@ -12,7 +12,7 @@ const router = createRouter({
         {
             path: '/pg',
             component: pg,
-        }
+        },
     ]
 })
 export default router
