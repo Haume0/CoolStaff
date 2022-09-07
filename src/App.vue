@@ -14,8 +14,9 @@ $(document).ready(function () {
 });
 
 $(window).resize(function () {
-  let screenS = window.screen.width;
-  if (screenS <= 1080) {
+  let screenW = window.screen.width;
+  let screenH = window.screen.height;
+  if (screenW < screenH) {
     $(":root").css("--scale", "0.85");
   } else {
     $(":root").css("--scale", "1");
