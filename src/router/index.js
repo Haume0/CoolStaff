@@ -1,17 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import mainMenu from '../components/mainmenu.vue'
-import pg from '../components/passwordgenerator.vue'
+import home from '../routes/home.vue'
+import community from '../routes/community.vue'
 
 const router = createRouter({
     history: createWebHistory(),
     routes: [
         {
             path: '/',
-            component: mainMenu,
+            component: home,
         },
         {
-            path: '/pg',
-            component: pg,
+            path: '/community',
+            component: community,
         },
     ]
 })
