@@ -1,18 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import home from '../routes/home.vue'
-import community from '../routes/community.vue'
+import mainMenu from '../components/anamenu.vue'
+import pg from '../components/pg.vue'
 
 const router = createRouter({
     history: createWebHistory(),
     routes: [
         {
             path: '/',
-            component: home,
+            component: mainMenu,
         },
         {
-            path: '/community',
-            component: community,
-        },
+            path: '/pg',
+            component: pg,
+        }
     ]
 })
 export default router

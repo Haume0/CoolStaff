@@ -5,22 +5,16 @@ module.exports = {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    screens:{
-      'phone': '280px',
-      'desktop': '710px'
+    fontFamily: {
+      Nunito: 'Nunito'
     },
-    extend: {
-      fontFamily: {
-        SourceSansPro: 'Source Sans Pro',
-        Poppins : 'Poppins',
-        Comfortaa: 'Comforta'
-      },
-      colors:{
-        SPmain: "#171A21",
-        SPside: "#414141",
-        SPbtn: "#222632"
-      },
+    colors:{
+      csmain: "#212121",
+      csside: "#323232",
+      csblue: "#1EBCFA",
+      cspink: "#EF629F",
     },
+    extend: {},
   },
   plugins: [],
 }
