@@ -63,7 +63,7 @@ let settings = {
 if(localStorage.getItem('settings') != null){
 	settings = JSON.parse(localStorage.getItem('settings'))
 }else {localStorage.setItem('settings',JSON.stringify(settings))}
-let password =''
+let password;
 function createPassword(length,lists){
 	password = ''
 	if(lists.number == true){
