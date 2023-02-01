@@ -9,7 +9,7 @@
         </div>
       </div>
       <div class="w-full h-[5rem] group relative rounded-lg flex mt-6 bg-_grey">
-        <span class="text-2xl font-Nunito m-auto font-bold ease-in-out duration-300">{password}</span>
+        <input type="text" name="" bind:value={password} spellcheck="false" readonly class="w-[90%] text-2xl bg-transparent text-center outline-none border-none font-Nunito m-auto font-bold ease-in-out duration-300" id="">
         <button on:click={()=>{createPassword(settings.length,settings)}} class="absolute right-2 flex p-1 rounded-md opacity-0 ease-in-out duration-200 transition-opacity group-hover:opacity-100 border-[1px] group active:border-_blue border-white items-center justify-center top-2 w-7 h-7">
           <svg class="stroke-white fill-transparent" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M19.933 13.041a8 8 0 1 1-9.925-8.788c3.899-1 7.935 1.007 9.425 4.747"/><path d="M20 4v5h-5"/></g></svg>
         </button>
@@ -79,7 +79,7 @@ function createPassword(length,lists){
 	if(lists.uCase == true){
 		usedLists = [...usedLists,...Alphabet]
 	}
-	 for(var i=0;i<=length;i++){
+	 for(var i=0;i<length;i++){
 		password += usedLists[(Math.random()*usedLists.length).toFixed(0)]
 	 }
 	 localStorage.setItem('settings',JSON.stringify(settings))
