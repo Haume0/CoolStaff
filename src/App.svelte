@@ -18,17 +18,17 @@
         </button>
         <input type="number" name="" bind:value={settings.length} class=" rounded-md opacity-0 group-hover:opacity-100 absolute font-Nunito text-sm text-center font-bold right-2 bottom-2 w-14 h-6 bg-_darkgrey" id="">
       </div>
-      <div class="flex flex-row w-full h-auto grid mt-4 grid-flow-col grid-cols-3 gap-2">
+      <div class="w-full h-auto grid mt-4 grid-flow-col grid-cols-3 gap-2">
         <button on:click={()=>{settings.number = !settings.number}} class="bg-_grey col-span-1 items-center flex flex-row h-8 rounded-full">
-          <div class:bg-_blue={settings.number} class="w-5 h-5 my-auto ml-[6px] rounded-full ease-in-out duration-300 bg-_pink"></div>
+          <div class:!bg-_blue={settings.number} class="w-5 h-5 my-auto ml-[6px] rounded-full ease-in-out duration-300 bg-_pink"></div>
           <span class="font-Nunito mx-auto font-semibold">Numbers</span>
         </button>
         <button on:click={()=>{settings.symbols = !settings.symbols}} class="bg-_grey col-span-1 items-center flex flex-row h-8 rounded-full">
-          <div class:bg-_blue={settings.symbols} class="w-5 h-5 my-auto ml-[6px] rounded-full ease-in-out duration-300 bg-_pink"></div>
+          <div class:!bg-_blue={settings.symbols} class="w-5 h-5 my-auto ml-[6px] rounded-full ease-in-out duration-300 bg-_pink"></div>
           <span class="font-Nunito mx-auto font-semibold">Symbols</span>
         </button>
         <button on:click={()=>{settings.uCase = !settings.uCase}} class="bg-_grey col-span-1 items-center flex flex-row h-8 rounded-full">
-          <div class:bg-_blue={settings.uCase} class="w-5 h-5 my-auto ml-[6px] rounded-full ease-in-out duration-300 bg-_pink"></div>
+          <div class:!bg-_blue={settings.uCase} class="w-5 h-5 my-auto ml-[6px] rounded-full ease-in-out duration-300 bg-_pink"></div>
           <span class="font-Nunito mx-auto font-semibold">UpperCase</span>
         </button>
       </div>
