@@ -9,11 +9,11 @@
         </div>
       </div>
       <div class="w-full h-[5rem] group relative rounded-lg flex mt-6 bg-_grey">
-        <span class="text-2xl font-Nunito m-auto font-bold">{password}</span>
+        <span class="text-2xl font-Nunito m-auto font-bold ease-in-out duration-300">{password}</span>
         <button on:click={()=>{createPassword(settings.length,settings)}} class="absolute right-2 flex p-1 rounded-md opacity-0 ease-in-out duration-200 transition-opacity group-hover:opacity-100 border-[1px] group active:border-_blue border-white items-center justify-center top-2 w-7 h-7">
           <svg class="stroke-white fill-transparent" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M19.933 13.041a8 8 0 1 1-9.925-8.788c3.899-1 7.935 1.007 9.425 4.747"/><path d="M20 4v5h-5"/></g></svg>
         </button>
-        <button on:click={()=>{navigator.clipboard.writeText(password)}} class="absolute left-2 flex p-1 rounded-md opacity-0 ease-in-out duration-200 transition-opacity group-hover:opacity-100 border-[1px] group active:border-_blue border-white items-center justify-center top-2 w-7 h-7">
+        <button on:click={()=>{copy()}} class="absolute left-2 flex p-1 rounded-md opacity-0 ease-in-out duration-200 transition-opacity group-hover:opacity-100 border-[1px] group active:border-_blue border-white items-center justify-center top-2 w-7 h-7">
           <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M9 18q-.825 0-1.412-.587Q7 16.825 7 16V4q0-.825.588-1.413Q8.175 2 9 2h9q.825 0 1.413.587Q20 3.175 20 4v12q0 .825-.587 1.413Q18.825 18 18 18Zm0-2h9V4H9v12Zm-4 6q-.825 0-1.413-.587Q3 20.825 3 20V7q0-.425.288-.713Q3.575 6 4 6t.713.287Q5 6.575 5 7v13h10q.425 0 .713.288q.287.287.287.712t-.287.712Q15.425 22 15 22ZM9 4v12V4Z"/></svg>
         </button>
         <input type="number" name="" bind:value={settings.length} class=" rounded-md opacity-0 group-hover:opacity-100 absolute font-Nunito text-sm text-center font-bold right-2 bottom-2 w-14 h-6 bg-_darkgrey" id="">
@@ -64,6 +64,7 @@ if(localStorage.getItem('settings') != null){
 	settings = JSON.parse(localStorage.getItem('settings'))
 }else {localStorage.setItem('settings',JSON.stringify(settings))}
 let password;
+let _password;
 function createPassword(length,lists){
 	password = ''
 	if(lists.number == true){
@@ -82,6 +83,14 @@ function createPassword(length,lists){
 		password += usedLists[(Math.random()*usedLists.length).toFixed(0)]
 	 }
 	 localStorage.setItem('settings',JSON.stringify(settings))
+}
+function copy(){
+  navigator.clipboard.writeText(password);
+  _password = password;
+  password = 'Copied!'
+  setTimeout(() => {
+    password = _password
+  }, 800);
 }
 createPassword(settings.length,settings)
 </script>
