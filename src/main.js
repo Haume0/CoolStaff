@@ -1,9 +1,8 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
-import './fonts/fonts.css'
-import router from './router/'
+import './app.css'
+import App from './App.svelte'
 
-const app = createApp(App)
-app.use(router)
-app.mount('#app')
+const app = new App({
+  target: document.getElementById('app'),
+})
+
+export default app
